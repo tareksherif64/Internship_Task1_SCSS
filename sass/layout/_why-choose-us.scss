@@ -1,0 +1,127 @@
+.why-choose-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: #e3dbd8;
+    font-family: "Jakarta Sans", sans-serif;
+
+    .why-choose-us {
+        display: flex;
+        gap: 2rem;
+
+        .image {
+            position: relative;
+
+            .family-image {
+                border-radius: 10px;
+                max-width: 100%;
+            }
+
+            .experience {
+                position: absolute;
+                bottom: 1rem;
+                left: 1rem;
+                background-color: #1f3c88;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .years {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .text {
+            .title {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h2 {
+                    color: #1f3c88;
+                    font-size: 2rem;
+                    margin-bottom: 0.5rem;
+                    font-family: 'Plus Jakarta Sans', sans-serif;
+                }
+
+                .decorative-image {
+                    margin: 0.5rem 0;
+                }
+
+                h3 {
+                    color: #1f3c88;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    font-family: 'Plus Jakarta Sans', sans-serif;
+                }
+            }
+
+            .services {
+                .service {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+
+                    .icon-check {
+                        color: #1f3c88;
+                        font-size: 1.5rem;
+                    }
+
+                    h4 {
+                        color: #1f3c88;
+                        font-size: 1.2rem;
+                        margin-bottom: 0.5rem;
+                        font-family: 'Plus Jakarta Sans', sans-serif;
+                    }
+
+                    p {
+                        color: #000;
+                        font-family: 'Jakarta Sans', sans-serif;
+                    }
+                }
+            }
+
+            .actions {
+                display: flex;
+                gap: 2rem;
+                margin-top: 2rem;
+
+                .button.read-more {
+                    @include button-style(#1f3c88, #fff);
+                }
+                
+
+                .contact {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .icon-phone {
+                        color: #1f3c88;
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        margin: 0;
+                        color: #000;
+                        font-family: 'Jakarta Sans', sans-serif;
+
+                        &:first-of-type {
+                            font-size: 0.9rem;
+                        }
+
+                        &:last-of-type {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

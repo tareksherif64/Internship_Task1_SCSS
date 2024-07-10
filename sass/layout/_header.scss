@@ -1,0 +1,40 @@
+.header{
+    background-color: #e3dbd8;
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: auto;
+    position: relative;
+    top: 1rem;
+    background-color: white;
+    border-radius: .75rem;
+    width: 45rem;
+  
+    .icon-TravelX-logo {
+      font-size: 2rem;
+      color: #1f3c88;
+    }
+  
+    nav ul {
+      display: flex;
+      gap: 1rem;
+      
+      li {
+        list-style: none;
+        
+        a {
+          text-decoration: none;
+          color: #000;
+          font-family: 'Jakarta Sans', sans-serif;
+        }
+      }
+    }
+  
+    .appointment-btn {
+        @include button-style(#1f3c88, #fff);
+    }
+    
+  }
+}

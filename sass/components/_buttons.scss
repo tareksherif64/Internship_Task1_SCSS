@@ -1,0 +1,12 @@
+.read-more {
+    @include button-style(#1f3c88, #fff);
+}
+
+.appointment-btn {
+    @include button-style(#1f3c88, #fff);
+}
+
+.contact-btn {
+    @include button-style(transparent, #1f3c88, 0.5rem 1rem, 5px);
+    border: 2px solid #1f3c88;
+}

@@ -1,0 +1,60 @@
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: #e3dbd8;
+    font-family: "Jakarta Sans", sans-serif;
+    flex-direction: row;
+  
+    .hero-content {
+      max-width: 50%;
+      
+      h2 {
+        color: #1f3c88;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+  
+      h1 {
+        color: #1f3c88;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+  
+      .contact-btn {
+        @include button-style(transparent, #1f3c88, 0.5rem 1rem, 5px);
+        border: 2px solid #1f3c88;
+    }
+    
+    }
+  
+    .hero-image {
+      position: relative;
+      max-width: 50%;
+  
+      img {
+        border-radius: 10px;
+        max-width: 100%;
+      }
+  
+      .country-labels {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+  
+        span {
+          background-color: #fff;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+          font-family: 'Jakarta Sans', sans-serif;
+        }
+      }
+    }
+  }
+  
