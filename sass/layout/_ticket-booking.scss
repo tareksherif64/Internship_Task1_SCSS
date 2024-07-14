@@ -1,0 +1,87 @@
+// sass/layout/_ticket-booking.scss
+
+.ticket-booking-container {
+    border-radius: 3.125rem;
+    background: linear-gradient(90deg, #2437AC 0%, #2437AC 38.31%, rgba(36, 55, 172, 0) 99.4%);
+    @include flex-center;
+    flex-direction: column;
+    padding: 4.875rem 3.125rem;
+    max-width: 80.625rem;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.ticket-booking-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.625rem;
+    flex-wrap: wrap;
+    
+
+    .icon {
+        width: 3.25rem;
+    }
+
+    .title-text {
+        margin: 0 0.675rem;
+        @include font-style(600, 0.875rem, uppercase);
+        color: #FFFFFF;
+    }
+
+    .main-title {
+        @include font-style(700, 3.125rem);
+        color: #FFFFFF;
+        line-height: 1.2;
+        margin-left: 1rem;
+    }
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    .field-row {
+        display: flex;
+        margin-bottom: 1.25rem;
+
+        .field-container {
+            display: flex;
+            flex-direction: column;
+            margin-right: 1.25rem;
+
+            label {
+                @include font-style(600, 1.125rem);
+                color: #FFFFFF;
+                margin-bottom: 0.625rem;
+            }
+
+            .select-button {
+                @include button-style(transparent, #FFFFFF, 0.625rem 0.9375rem, 1.5625rem);
+                display: flex;
+                align-items: center;
+                border: 1px solid #FFFFFF; /* Added thin white border */
+
+                span {
+                    margin: 0 0.625rem;
+                }
+
+                img {
+                    width: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+.book-now-button-container {
+    @include flex-center;
+    width: 100%; /* Make the container full width */
+
+    .book-now-button {
+        @include button-style(#00B8FF, #FFFFFF, 0.9375rem 1.875rem, 3.125rem);
+        width: 100%; /* Make the button as wide as the fields container */
+    }
+}

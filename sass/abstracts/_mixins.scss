@@ -1,20 +1,28 @@
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  @mixin button-style($bg-color, $text-color, $padding: 0.5rem 1rem, $border-radius: 5px) {
-    background-color: $bg-color;
-    color: $text-color;
-    padding: $padding;
-    border: none;
-    border-radius: $border-radius;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-// sass/abstracts/_mixins.scss
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin button-style($bg-color, $text-color, $padding: 0.5rem 1rem, $border-radius: 5px) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border: none;
+  border-radius: $border-radius;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: pointer;
+}
 
 @mixin button {
   font-size: 1.125rem;
@@ -32,4 +40,15 @@
     background-color: #2437ac;
     color: #fff;
   }
+}
+
+@mixin font-style($weight, $size, $transform: normal) {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  text-transform: $transform;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
 }

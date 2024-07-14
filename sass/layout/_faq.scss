@@ -1,0 +1,160 @@
+.faq-section {
+    @include flex-row;
+    margin: 0 0 120px 18.9px;
+    width: 80.625rem;
+    padding-top: 18.75rem;
+    position: relative;
+    left: 5rem;
+    justify-content: center;
+  }
+  
+  .image-column {
+    @include flex-row;
+    width: 600px;
+    margin-right: 60px;
+  }
+  
+  .image-item {
+    @include border-radius(20px);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  
+  .image-item-large {
+    @extend .image-item;
+    width: 300px;
+    height: 468px;
+    margin-bottom: 29px;
+  }
+  
+  .image-item-medium {
+    @extend .image-item;
+    width: 270px;
+    height: 181px;
+    margin-bottom: 23px;
+  }
+  
+  .image-item-small {
+    @extend .image-item;
+    width: 270px;
+    height: 423px;
+  }
+  
+  .highlight-box {
+    @include border-radius(20px);
+    border: 2px solid #00B8FF;
+    background: #FFFFFF;
+    @include flex-row;
+    padding: 20px 0 24px 0;
+    width: 285px;
+    margin: 0 8px 0 7px;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .text-primary {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.556;
+    color: #2437AC;
+    margin-left: 10px;
+  }
+  
+  .text-secondary {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #727272;
+  }
+  
+  .questions-column {
+    @include flex-column;
+    margin: 27px 0;
+  }
+  
+  .section-title {
+    @include flex-column;
+    margin-bottom: 40px;
+  }
+  
+  .main-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #2437AC;
+  }
+  
+  .subtitle {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #2437AC;
+    margin-right: 10.6px;
+  }
+  
+  .decorative-line {
+    width: 52px;
+    height: 9.9px;
+    margin: 2.1px 0;
+  }
+  
+  .question-item {
+    position: relative;
+    @include flex-row;
+    justify-content: space-between;
+    padding: 24px 0 24px 30px;
+    width: 648.9px;
+    margin-bottom: 29px;
+    border: solid grey 2px;
+    border-radius: 1.5rem;
+  }
+  
+  .question-background {
+    @include border-radius(20px);
+    border: 1px solid #E3DBD8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 630px;
+    height: 158px;
+  }
+  
+  .question-text-primary {
+    @extend .text-primary;
+  }
+  
+  .question-text-secondary {
+    @extend .text-secondary;
+  }
+  
+  .icon-container {
+    @include flex-row;
+    padding: 12px 0 9px 16px;
+    position: relative;
+  }
+  
+  .icon-small {
+    @include border-radius(20px);
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon-arrow {
+    font-family: 'Font Awesome 6 Free', 'Roboto Condensed';
+    font-weight: 900;
+    font-size: 16px;
+    color: #2437AC;
+    margin-left: 10px;
+  }
+  

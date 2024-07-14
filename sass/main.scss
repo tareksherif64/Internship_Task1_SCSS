@@ -1,14 +1,26 @@
-@import 'abstracts/variables';
 @import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+
 @import 'base/reset';
 @import 'base/typography';
+
 @import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+
+@import 'layout/footer';
 @import 'layout/header';
-@import 'layout/hero';
 @import 'layout/why-choose-us';
+@import 'layout/ticket-booking';
 @import 'layout/coaching';
+@import 'layout/countries';
+@import 'layout/hero';
+@import 'layout/faq';
+@import 'layout/line';
 @import 'pages/home2';
-@import 'themes/admin';
-@import 'themes/theme';
+
 @import 'vendors/bootstrap';
 @import 'vendors/jquery-ui';

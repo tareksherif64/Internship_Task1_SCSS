@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -74,63 +75,6 @@
   border-radius: 5px;
   font-family: "Plus Jakarta Sans", sans-serif;
   cursor: pointer;
-}
-
-.hero-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
-  background-color: #e3dbd8;
-  font-family: "Jakarta Sans", sans-serif;
-  flex-direction: row;
-}
-.hero-section .hero-content {
-  max-width: 50%;
-}
-.hero-section .hero-content h2 {
-  color: #1f3c88;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-.hero-section .hero-content h1 {
-  color: #1f3c88;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-.hero-section .hero-content .contact-btn {
-  background-color: transparent;
-  color: #1f3c88;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  cursor: pointer;
-  border: 2px solid #1f3c88;
-}
-.hero-section .hero-image {
-  position: relative;
-  max-width: 50%;
-}
-.hero-section .hero-image img {
-  border-radius: 10px;
-  max-width: 100%;
-}
-.hero-section .hero-image .country-labels {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.hero-section .hero-image .country-labels span {
-  background-color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-family: "Jakarta Sans", sans-serif;
 }
 
 .why-choose-us-container {
@@ -242,6 +186,106 @@
   font-size: 1.2rem;
 }
 
+.ticket-booking-container {
+  border-radius: 3.125rem;
+  background: linear-gradient(90deg, #2437AC 0%, #2437AC 38.31%, rgba(36, 55, 172, 0) 99.4%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4.875rem 3.125rem;
+  max-width: 80.625rem;
+  margin: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+
+.ticket-booking-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.625rem;
+  flex-wrap: wrap;
+}
+.ticket-booking-title .icon {
+  width: 3.25rem;
+}
+.ticket-booking-title .title-text {
+  margin: 0 0.675rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.ticket-booking-title .main-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3.125rem;
+  text-transform: normal;
+  color: #FFFFFF;
+  line-height: 1.2;
+  margin-left: 1rem;
+}
+
+.fields-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.fields-container .field-row {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+.fields-container .field-row .field-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.25rem;
+}
+.fields-container .field-row .field-container label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-transform: normal;
+  color: #FFFFFF;
+  margin-bottom: 0.625rem;
+}
+.fields-container .field-row .field-container .select-button {
+  background-color: transparent;
+  color: #FFFFFF;
+  padding: 0.625rem 0.9375rem;
+  border: none;
+  border-radius: 1.5625rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #FFFFFF; /* Added thin white border */
+}
+.fields-container .field-row .field-container .select-button span {
+  margin: 0 0.625rem;
+}
+.fields-container .field-row .field-container .select-button img {
+  width: 1.25rem;
+}
+
+.book-now-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Make the container full width */
+}
+.book-now-button-container .book-now-button {
+  background-color: #00B8FF;
+  color: #FFFFFF;
+  padding: 0.9375rem 1.875rem;
+  border: none;
+  border-radius: 3.125rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+  width: 100%; /* Make the button as wide as the fields container */
+}
+
 .coaching {
   border-radius: 3.125rem;
   background: #ffffff;
@@ -345,6 +389,384 @@
 .coaching .all-courses .button-text:hover {
   background-color: #2437ac;
   color: #fff;
+}
+
+.countries-list {
+  padding: 10rem 1rem;
+  text-align: center;
+}
+.countries-list .countries-support {
+  margin-bottom: 2.5rem;
+}
+.countries-list .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.countries-list .heading {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #2437ac;
+}
+.countries-list .decorator {
+  width: 2rem;
+}
+.countries-list .subheading {
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 0.625rem;
+}
+.countries-list .countries-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+.countries-list .country {
+  background-color: white;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 15.625rem;
+  padding: 1.25rem;
+  text-align: center;
+}
+.countries-list .country:hover {
+  transform: translateY(-0.625rem);
+}
+.countries-list .country img {
+  width: 3.75rem;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 0.625rem;
+}
+.countries-list .country h4 {
+  margin: 0.625rem 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+.countries-list .country ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.countries-list .country ul li {
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+  margin: 0.3125rem 0;
+}
+.countries-list .country ul li::before {
+  content: "✔";
+  color: #1d9bf0;
+  margin-right: 0.5rem;
+}
+.countries-list .all-countries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1.25rem;
+}
+.countries-list .all-countries .line {
+  width: 30%;
+  height: 1px;
+  background: #2437ac;
+}
+.countries-list .all-countries .button-text {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #2437ac;
+  background-color: #fff;
+  border: 2px solid #2437ac;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+.countries-list .all-countries .button-text:hover {
+  background-color: #2437ac;
+  color: #fff;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  background-color: #e3dbd8;
+  font-family: "Jakarta Sans", sans-serif;
+  flex-direction: row;
+}
+.hero-section .hero-content {
+  max-width: 50%;
+}
+.hero-section .hero-content h2 {
+  color: #1f3c88;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.hero-section .hero-content h1 {
+  color: #1f3c88;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.hero-section .hero-content .contact-btn {
+  background-color: transparent;
+  color: #1f3c88;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+  border: 2px solid #1f3c88;
+}
+.hero-section .hero-image {
+  position: relative;
+  max-width: 50%;
+}
+.hero-section .hero-image img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+.hero-section .hero-image .country-labels {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.hero-section .hero-image .country-labels span {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-family: "Jakarta Sans", sans-serif;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 120px 18.9px;
+  width: 80.625rem;
+  padding-top: 18.75rem;
+  position: relative;
+  left: 5rem;
+  justify-content: center;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  margin-right: 60px;
+}
+
+.image-item, .image-item-small, .image-item-medium, .image-item-large {
+  border-radius: 20px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.image-item-large {
+  width: 300px;
+  height: 468px;
+  margin-bottom: 29px;
+}
+
+.image-item-medium {
+  width: 270px;
+  height: 181px;
+  margin-bottom: 23px;
+}
+
+.image-item-small {
+  width: 270px;
+  height: 423px;
+}
+
+.highlight-box {
+  border-radius: 20px;
+  border: 2px solid #00B8FF;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0 24px 0;
+  width: 285px;
+  margin: 0 8px 0 7px;
+  align-items: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.text-primary, .question-text-primary {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.556;
+  color: #2437AC;
+  margin-left: 10px;
+}
+
+.text-secondary, .question-text-secondary {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #727272;
+}
+
+.questions-column {
+  display: flex;
+  flex-direction: column;
+  margin: 27px 0;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.main-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #2437AC;
+}
+
+.subtitle {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #2437AC;
+  margin-right: 10.6px;
+}
+
+.decorative-line {
+  width: 52px;
+  height: 9.9px;
+  margin: 2.1px 0;
+}
+
+.question-item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 0 24px 30px;
+  width: 648.9px;
+  margin-bottom: 29px;
+  border: solid grey 2px;
+  border-radius: 1.5rem;
+}
+
+.question-background {
+  border-radius: 20px;
+  border: 1px solid #E3DBD8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 630px;
+  height: 158px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  padding: 12px 0 9px 16px;
+  position: relative;
+}
+
+.icon-small {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-arrow {
+  font-family: "Font Awesome 6 Free", "Roboto Condensed";
+  font-weight: 900;
+  font-size: 16px;
+  color: #2437AC;
+  margin-left: 10px;
+}
+
+.line-section {
+  background: #00B8FF;
+  padding: 0.75rem 3.8rem;
+  margin-bottom: 7.5rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 120rem;
+}
+
+.text-highlight,
+.text-highlight-bordered,
+.cyber-link {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  letter-spacing: -0.1rem;
+  line-height: 1.111;
+  color: #FFFFFF;
+  display: inline-block;
+  overflow-wrap: break-word;
+  margin: 0 2.5rem;
+}
+
+.text-highlight {
+  margin-right: 2.8rem;
+}
+
+.text-highlight-bordered {
+  opacity: 0.7;
+  border: 0.1rem solid #FFFFFF;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.1rem;
+  height: 4.1rem;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 4.1rem;
+  height: 4.1rem;
+}
+
+.icon-small {
+  width: 4.1rem;
+  height: 2.5rem;
+}
+
+.cyber-link {
+  position: relative;
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
